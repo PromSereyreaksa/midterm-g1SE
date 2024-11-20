@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #cacaca;
+  font-size: 24px;
+  height: 100vh;
+  text-align: center;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 80px 400px 1fr 250px;
+  grid-template-rows: 80px 1fr;
+  background-color: #343a40;
+}
+nav {
+  grid-row: 1/1;
+  grid-column: 1/1;
+  color: white;
+  background-color: #343a40;
+}
+menu {
+  padding-left: 40px;
+  grid-column: 2/5;
+  grid-row: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  gap: 10px;
+  background-color: #7048e8;
+}
+menu button {
+  border-style: none;
+  /* align-self: flex-end; */
+  padding: 10px;
+  margin: 0 10px;
+  color: white;
+  background-color: #5f3dc4;
+}
+
+menu button:last-child {
+  /* transform: translateX(870px); */
+  margin-left: auto;
+  background-color: #d6336c;
+  color: white;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  gap: 40px;
+  padding: 40px;
+  grid-row: span 2;
+  grid-column: 2/2;
+  color: black;
+  background-color: #e9ecef;
+}
+main {
+  background-color: white;
+  grid-row: span 2;
+  color: black;
+  grid-column: 1fr;
+}
+aside {
+  color: black;
+  grid-row: 2/2;
+  grid-column: 4/4;
+  background-color: #e9ecef;
+}
+.email {
+  padding: 40px;
+  background-color: #798086;
+}
